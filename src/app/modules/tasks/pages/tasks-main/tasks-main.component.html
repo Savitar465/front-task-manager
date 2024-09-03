@@ -1,3 +1,19 @@
-<div *ngFor="let task of tasks">
-  <h3>{{ task.title }}</h3>
-</div>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Header</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+
+  <ion-list>
+    <ion-item *ngFor="let task of tasks">
+      <ion-text>{{ task.title }}</ion-text>
+      <ion-button>Press Me</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
