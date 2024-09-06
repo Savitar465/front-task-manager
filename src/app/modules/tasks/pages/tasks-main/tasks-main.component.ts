@@ -14,7 +14,6 @@ export class TasksMainComponent implements OnInit {
 
   ngOnInit(): void {
     this.tasksService.getTasks().subscribe((data: any) => {
-      console.log(data);
       this.tasks = data.data;
     });
   }

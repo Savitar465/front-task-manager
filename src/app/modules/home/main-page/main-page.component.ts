@@ -1,14 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {addIcons} from "ionicons";
+import {add, search} from "ionicons/icons";
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss'],
 })
-export class MainPageComponent  implements OnInit {
+export class MainPageComponent {
 
-  constructor() { }
-
-  ngOnInit() {}
+  constructor() {
+    addIcons({
+      add,
+      search
+    })
+  }
 
 }

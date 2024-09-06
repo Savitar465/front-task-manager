@@ -5,11 +5,11 @@ import {MainPageComponent} from "./main-page/main-page.component";
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/tasks',
     pathMatch: 'full'
   },
   {
-    path: 'home',
+    path: '',
     component: MainPageComponent,
     children: [
       {
