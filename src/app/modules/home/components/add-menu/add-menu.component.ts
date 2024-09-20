@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ModalController} from "@ionic/angular";
+import {CreateTaskComponent} from "../../../tasks/components/create-task/create-task.component";
 
 @Component({
   selector: 'app-add-menu',
@@ -7,6 +9,15 @@ import { Component } from '@angular/core';
 export class AddMenuComponent {
 
   constructor(
+    private modalController: ModalController,
   ) { }
 
+  openCreateModal() {
+    this.modalController.create({
+      component: CreateTaskComponent,
+    }).then(modal => {
+      modal.present();
+    });
+
+  }
 }
