@@ -9,7 +9,7 @@ import {CreateTaskComponent} from "../../../tasks/components/create-task/create-
 export class AddMenuComponent {
 
   constructor(
-    private modalController: ModalController,
+    private readonly modalController: ModalController,
   ) { }
 
   openCreateModal() {
