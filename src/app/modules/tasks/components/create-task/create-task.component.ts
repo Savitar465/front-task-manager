@@ -11,10 +11,9 @@ export class CreateTaskComponent implements OnInit {
   form!: FormGroup;
 
   constructor(
-    private formBuilder: FormBuilder,
-    private tasksService: TasksService,
-  ) {
-  }
+    private readonly formBuilder: FormBuilder,
+    private readonly tasksService: TasksService,
+  ) { }
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
