@@ -1,13 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-date-input',
   templateUrl: './date-input.component.html',
 })
-export class DateInputComponent  implements OnInit {
+export class DateInputComponent {
 
   constructor() { }
-
-  ngOnInit() {}
 
 }
