@@ -10,9 +10,9 @@ import {ResponseModel} from "../../shared/model/response.model";
   providedIn: 'root'
 })
 export class UsersService {
-  private apiUrl = environment.api + '/users';
+  private readonly apiUrl = environment.api + '/users';
 
-  constructor(private http: HttpClient) {
+  constructor(private readonly http: HttpClient) {
   }
 
   postUser(userRequest: UserRequest): Observable<ResponseModel<User>> {
