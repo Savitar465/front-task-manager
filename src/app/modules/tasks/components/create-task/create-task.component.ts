@@ -7,7 +7,7 @@ import {FormBuilder, FormGroup} from "@angular/forms";
   selector: 'app-create-task',
   templateUrl: './create-task.component.html',
 })
-export class CreateTaskComponent implements OnInit{
+export class CreateTaskComponent implements OnInit {
   form!: FormGroup;
 
   constructor(
@@ -16,7 +16,7 @@ export class CreateTaskComponent implements OnInit{
   ) { }
 
   ngOnInit(): void {
-    this.form= this.formBuilder.group({
+    this.form = this.formBuilder.group({
       title: [''],
       description: [''],
       startDate: [''],
@@ -26,7 +26,6 @@ export class CreateTaskComponent implements OnInit{
       assignee: [''],
       typeId: [''],
     });
-
   }
 
   createTask() {

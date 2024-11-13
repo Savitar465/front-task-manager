@@ -10,9 +10,9 @@ import {TaskRequest} from "../requests/task.request";
   providedIn: 'root'
 })
 export class TasksService {
-  private apiUrl = environment.api+'/issues';
+  private readonly apiUrl = environment.api+'/issues';
 
-  constructor(private http: HttpClient) {
+  constructor(private readonly http: HttpClient) {
   }
 
   getTasks(): Observable<ResponseModel<Task[]>> {
